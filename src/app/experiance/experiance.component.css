@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+.main-text{
+  margin-top: 100px;
+}
+.main-text h2 {
+  color: var(--main-color);
+  font-size: 40px;
+  text-shadow:0px 5px 10px var(--main-color);
+  margin: 0 auto;
+  text-align: center;
+}
+.allExp{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.container  {
+  position: relative;
+  margin-top: 100px;
+  height: 350px;
+  width: 350px;
+  background: #f5f6f1;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px gray;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-weight: 900;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+  font-weight: 300;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flap {
+  width: 100%;
+  height: 100%;
+}
+
+.flap::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url("../../assets/Syriatel_Logo.png")#f5f6f1;
+  background-position: 50px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+.flap3::before{
+  background: url("../../assets/free2.png")#f5f6f1;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: top 50% left 50%;
+}
+.flap2::before{
+  background: url("../../assets/conc.png")#f5f6f1;
+  background-size: 320px;
+  background-repeat: no-repeat;
+  background-position: top 0 right 0 bottom 2%  left 50px;
+}
+
+/* .flap::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url("../../assets/Syriatel_Logo.png") white;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+} */
+
+/* .container:hover .flap::after {
+  transform: translatex(300px);
+} */
+
+.container:hover .flap::before{
+  transform: translatex(-400px);
+}
+
+ol li{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Medai Query */
+@media (max-width: 1325px){
+
+}
+
+@media (max-width: 970px){
+
+}
+
+@media (max-width: 830px){
+  .container{
+    margin-top: 70px;
+  }
+  .main-text{
+    margin-top: 30px;
+  }
+  .main-text h2{
+    font-size: 30px;
+  }
+  .container{
+    width: 300px;
+    height: 300px;
+  }
+  .flap::before{
+    background-position: 20px;
+  }
+  .allExp{
+    gap:0px;
+  }
+  h1,h3{
+    font-size: 13px !important;
+  }
+  ol li{
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .flap2::before{
+    background-size: 250px;
+    background-position: 10px;
+  }
+}

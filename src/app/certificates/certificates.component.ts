@@ -1,0 +1,10 @@
+import { AfterViewInit, Component, ElementRef, Input, OnInit, SecurityContext, ViewChild } from '@angular/core';
+
+
+@Component({
+  selector: 'app-certificates',
+  templateUrl: './certificates.component.html',
+  styleUrls: ['./certificates.component.css'],
+})
+export class CertificatesComponent  {
+}

@@ -1,0 +1,138 @@
+.main-text{
+	text-align: center;
+  margin-top: 100px;
+}
+.main-text h2{
+	font-size: var(--h2-font);
+	margin-bottom: 10px;
+  text-shadow:0px 5px 10px var(--main-color);
+
+}
+.main-text h4{
+	color: var(--main-color);
+	font-size: 24px;
+	font-weight: 600;
+  margin-top: 40px;
+}
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.row img {
+  height: auto;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.row {
+  width: 395px;
+  height: 360px;
+  padding: 25px;
+  background: #12141c;
+  border-radius: 0.5rem;
+  transition: all .40s ease;
+}
+.row:hover{
+  box-shadow: 0 0 20px tomato;
+}
+
+.main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.row h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.row h6 {
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.row-icon i {
+  font-size: 21px;
+}
+
+.row:hover {
+  transform: scale(1.01) translateY(-5px);
+  cursor: pointer;
+}
+
+/* Media Query */
+@media (max-width: 1325px){
+	header{
+		padding: 16px 3%;
+	}
+	header.sticky{
+		padding: 8px 3%;
+	}
+	section{
+		padding: 130px 3% 60px;
+	}
+}
+
+@media (max-width: 970px){
+	:root{
+		--h1-font: 4.2rem;
+	  --h2-font: 2.9rem;
+	  --p-font: 1rem;
+	}
+	section{
+		padding: 70px 3% 60px;
+	}
+	.home{
+		height: 85vh;
+	}
+	.about{
+		grid-template-columns: 1fr;
+	}
+	.about-img{
+		text-align: center;
+	}
+	.contact{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 830px){
+	.portfolio{
+    margin-top: -140px;
+  }
+
+	:root{
+		--h1-font: 3.7rem;
+	  --h2-font: 2.7rem;
+	}
+  .row{
+    width: 300px;
+    margin: 0 auto;
+  }
+  .main-text h2{
+    font-size: 30px;
+    margin-top: -30px;
+  }
+  .main-text h4{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 40px;
+  }
+  .portfolio-content{
+    margin-top: 3rem;
+  }
+  .row:hover{
+    transform: scale(none) translateY(0px);
+  }
+}
